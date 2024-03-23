@@ -1,4 +1,4 @@
-# Monty-Python - "Let's let bicker and argue about who coded who!" 
+# Monty-Python - "Let's not bicker and argue about who coded who!" 
 
 To enter the python repel, open the terminal and type in py. To exit the python repel type in quit()
 
@@ -22,7 +22,7 @@ To make a comment in python, use the # symbol
 
 * Using +=, countup = 12, countup += 1, countup = 13, using += will add 1 to the variable - likewise -= will subtract,  *= multiply and /= divide...
 
-#### <span style='color:red;'>NOTE:  /= with give your answer a float (decimal) output. to rid this you can round() the answer</span>
+#### <span style='color:red;'>NOTE:  Using /= with give your answer a float (decimal) output. to rid this you can round() the answer</span>
 
 ```python
 #For exmaple...
@@ -73,3 +73,4 @@ True and False must start with an uppercase letter
 is_true = True
 is_false = False
 ```
+
