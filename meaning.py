@@ -1,4 +1,4 @@
-meaning = 50
+meaning = 5
 print('')
 
 # if meaning > 10:
@@ -6,5 +6,6 @@ print('')
 # else:
 #    print('Nah')
 
-
+# Ternary Operator
+print("Right on") if meaning > 20 else print('Today is not your day')
 

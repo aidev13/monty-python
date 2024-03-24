@@ -64,6 +64,9 @@ divide
 112 > 1231 = #False
 #<=, >= AS WELL
 ```
+* and
+* or
+* not
 
 ## --- NOTE ---
 
@@ -73,4 +76,5 @@ True and False must start with an uppercase letter
 is_true = True
 is_false = False
 ```
+
 
