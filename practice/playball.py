@@ -9,7 +9,7 @@ count = {
 
 team = {
    'home': "Brewers",
-   'vistiors': "Reds",
+   'visitors': "Reds",
 }
 
 atBat = team['home']
@@ -17,8 +17,10 @@ atBat = team['home']
 def switchAtBat():
    global atBat
    if atBat == team['home']:
-      atBat = team['vistiors']
-
+      atBat = team['visitors']
+   else:
+      atBat = team['home']
+   
 def reset_current_count():
    count['balls'] = 0
    count['strikes'] = 0
