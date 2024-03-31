@@ -1,5 +1,6 @@
-#  --- dictionaires like an object in JS which stores key-value pairs ---
+#  --- dictionaires are like an object in JS which stores key-value pairs ---
 
+# example 1
 player = {
    'fullName': "David Liebherr",
    'poisition': "DH",
@@ -8,7 +9,7 @@ player = {
    'hits': 425,
    'atbat': 851
 }
-
+# example 2 - contructor function
 player2 = dict(
    fullName = 'Cody Liebherr',
    position = 'Catcher',
@@ -174,5 +175,42 @@ team_members = {
 # print("Hits: " + str(team_members['player_1']['hits']) + " atbats: " + str(team_members['player_1']['atbat']))
 # print(batting_average(team_members['player_1']))
 
+
+
 # ---- SETS ----
-print("changing values in a dict".upper())
+
+# A set is an unordered collection of unique elements. This means that a set CANNOT HAVE DUPLICATE ELEMENTS, and the order in which the elements are stored is not guaranteed. Sets are mutable, meaning you can add or remove elements from them.
+
+# You can create a set in Python using curly braces {} or the set([]) constructor.
+
+set1 = set((False,1,2,3, 4)) # you can use [] or () inside the set construtor function
+set2 = {True, 4,5,6, 0}
+
+# Union of two sets
+union_set = set1 | set2  # or set1.union(set2) ... joins two sets together
+print(union_set)
+
+# Intersection of two sets
+intersection_set = set1 & set2  # or set1.intersection(set2) ... displays common elements
+print(intersection_set)
+
+# Difference between two sets
+difference_set = set2 - set1  # or set1.difference(set2) .. displays the unnique elements of a given set
+print(difference_set)
+
+# Symmetric difference between two sets
+symmetric_difference_set = set1 ^ set2  # or set1.symmetric_difference(set2) ... will removing common elements
+print(symmetric_difference_set)
+
+# NOTE!, True is a dupe of 1 (True = 1) while False is a dupe of 0 (False = 0)
+
+# Adding to a set
+set2.add(7)
+print(set2)
+print(set2)
+
+# addding more than one element to a set
+set3 = {8,9,10}
+set2.update(set3)
+print(set2)
+
