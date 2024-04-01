@@ -1,3 +1,5 @@
+# py playball.py
+
 import random
 print('')
 
@@ -14,6 +16,7 @@ team = {
 
 atBat = team['home']
 
+# ------------------------ Functions
 def switchAtBat():
    global atBat
    if atBat == team['home']:
@@ -33,6 +36,7 @@ def reset_count():
 rolled_dice = random.randint(1,6)
 print(f"Dice result: {rolled_dice}") # Print
 
+# ------------------------ End Functions
 
 if rolled_dice == 1 or rolled_dice == 3 or rolled_dice == 5:
    count['balls'] += 1
@@ -57,3 +61,4 @@ else:
    
 print('')
 print(atBat) # Print
+
