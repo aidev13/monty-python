@@ -80,7 +80,7 @@ runs = 0
 innings = 1
 
 
-while innings < 4:
+while innings < 2:
     roll = random.randint(1, 6)
     print("Roll:", roll)
     if roll == 1 or roll == 3 or roll == 5:
@@ -88,13 +88,16 @@ while innings < 4:
         print("Balls:", balls)
         print('')
         if balls == 4:
-            balls == 0
-            strikes == 0
+            balls = 0
+            strikes = 0
             walk += 1
             print("*** Walk ***: " + str(walk) )
-            if walk >= 4:
+            if walk == 4:
                 runs += 1
+                balls = 0
+                strikes = 0
                 print("#### RUN SCORED ####")
+                print('')
     else:
         strikes += 1
         print("Strikes:", strikes)
@@ -109,9 +112,10 @@ while innings < 4:
             strikes = 0
             balls = 0
             outs = 0
+            print('')
             print("Inning over!")
-            print(f"Inning: {innings}")
-            print(f"total runs: {runs}")
+            print(f"!!!! Inning: {innings} !!!!")
+            print(f"Total runs: {runs}")
             innings += 1
 
 #  --------- END  ---------
