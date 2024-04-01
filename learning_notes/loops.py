@@ -77,9 +77,10 @@ strikes = 0
 outs = 0
 walk = 3
 runs = 0
+innings = 1
 
 
-while outs < 3:
+while innings < 4:
     roll = random.randint(1, 6)
     print("Roll:", roll)
     if roll == 1 or roll == 3 or roll == 5:
@@ -100,15 +101,18 @@ while outs < 3:
         print('')
         if strikes == 3:
             outs += 1
-            print("*** OUT ***: " + str(outs))
-            print('')
             strikes = 0
             balls = 0
-            if outs == 3:
-                print("Inning over!")
-                print(f"Total walks: {walk}")
-                print(f"Total runs: {runs}")
-               
+            print("*** OUT ***: " + str(outs))
+            print('')
+        if outs == 3:
+            strikes = 0
+            balls = 0
+            outs = 0
+            print("Inning over!")
+            print(f"Inning: {innings}")
+            print(f"total runs: {runs}")
+            innings += 1
 
 #  --------- END  ---------
    
