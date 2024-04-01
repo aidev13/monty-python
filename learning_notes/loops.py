@@ -70,45 +70,45 @@ while value <= 10:
 # print("Congratulations! You guessed the correct number:", target)
 
 #  --------- Messing around with a while loop ---------
-# import random
+import random
 
-# balls = 0
-# strikes = 0
-# outs = 0
-# walk = 3
-# runs = 0
+balls = 0
+strikes = 0
+outs = 0
+walk = 3
+runs = 0
 
 
-# while balls < 4 or strikes < 3:
-#     roll = random.randint(1, 6)
-#     print("Roll:", roll)
-#     if roll == 1 or roll == 3 or roll == 5:
-#         balls += 1
-#         print("Balls:", balls)
-#         print('')
-#         if balls == 4:
-#             balls == 0
-#             strikes == 0
-#             walk += 1
-#             print("*** Walk ***: " + str(walk) )
-#             if walk >= 4:
-#                 runs += 1
-#                 print("#### RUN SCORED ####")
-#     else:
-#         strikes += 1
-#         print("Strikes:", strikes)
-#         print('')
-#         if strikes == 3:
-#             outs += 1
-#             print("*** OUT ***: " + str(outs))
-#             print('')
-#             strikes = 0
-#             balls = 0
-#             if outs == 3:
-#                 print("Inning over!")
-#                 print(f"Total walks: {walk}")
-#                 print(f"Total runs: {runs}")
-#                 break
+while outs < 3:
+    roll = random.randint(1, 6)
+    print("Roll:", roll)
+    if roll == 1 or roll == 3 or roll == 5:
+        balls += 1
+        print("Balls:", balls)
+        print('')
+        if balls == 4:
+            balls == 0
+            strikes == 0
+            walk += 1
+            print("*** Walk ***: " + str(walk) )
+            if walk >= 4:
+                runs += 1
+                print("#### RUN SCORED ####")
+    else:
+        strikes += 1
+        print("Strikes:", strikes)
+        print('')
+        if strikes == 3:
+            outs += 1
+            print("*** OUT ***: " + str(outs))
+            print('')
+            strikes = 0
+            balls = 0
+            if outs == 3:
+                print("Inning over!")
+                print(f"Total walks: {walk}")
+                print(f"Total runs: {runs}")
+               
 
 #  --------- END  ---------
    
