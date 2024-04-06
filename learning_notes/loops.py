@@ -70,55 +70,55 @@ while value <= 10:
 # print("Congratulations! You guessed the correct number:", target)
 
 #  --------- Messing around with a while loop ---------
-import random
+# import random
 
-balls = 0
-strikes = 0
-outs = 0
-walk = 3
-runs = 0
-innings = 1
+# balls = 0
+# strikes = 0
+# outs = 0
+# walk = 3
+# runs = 0
+# innings = 1
 
 
-while innings < 4:
-    roll = random.randint(1, 6)
-    print("Roll:", roll)
-    if roll == 1 or roll == 3 or roll == 5:
-        balls += 1
-        print(f"Balls: {balls}, Strikes: {strikes}")
-        print('')
-        if balls == 4:
-            balls = 0
-            strikes = 0
-            walk += 1
-            print("*** Walk ***: " + str(walk) )
-            if walk >= 4:
-                runs += 1
-                balls = 0
-                strikes = 0
-                print("#### RUN SCORED ####")
-                print('')
-    else:
-        strikes += 1
-        print(f"Balls: {balls}, Strikes: {strikes}")
-        print('')
-        if strikes == 3:
-            outs += 1
-            strikes = 0
-            balls = 0
-            print("*** OUT ***: " + str(outs))
-            print('')
-        if outs == 3:
-            strikes = 0
-            balls = 0
-            outs = 0
-            walks = 3
-            print('')
-            print("Inning over!")
-            print(f"!!!! Inning: {innings} !!!!")
-            print(f"Total runs: {runs}")
-            print('')
-            innings += 1
+# while innings < 4:
+#     roll = random.randint(1, 6)
+#     print("Roll:", roll)
+#     if roll == 1 or roll == 3 or roll == 5:
+#         balls += 1
+#         print(f"Balls: {balls}, Strikes: {strikes}")
+#         print('')
+#         if balls == 4:
+#             balls = 0
+#             strikes = 0
+#             walk += 1
+#             print("*** Walk ***: " + str(walk) )
+#             if walk >= 4:
+#                 runs += 1
+#                 balls = 0
+#                 strikes = 0
+#                 print("#### RUN SCORED ####")
+#                 print('')
+#     else:
+#         strikes += 1
+#         print(f"Balls: {balls}, Strikes: {strikes}")
+#         print('')
+#         if strikes == 3:
+#             outs += 1
+#             strikes = 0
+#             balls = 0
+#             print("*** OUT ***: " + str(outs))
+#             print('')
+#         if outs == 3:
+#             strikes = 0
+#             balls = 0
+#             outs = 0
+#             walks = 3
+#             print('')
+#             print("Inning over!")
+#             print(f"!!!! Inning: {innings} !!!!")
+#             print(f"Total runs: {runs}")
+#             print('')
+#             innings += 1
 
 #  --------- END  ---------
    
@@ -128,14 +128,76 @@ while innings < 4:
    
 # players = ["Stacey", "David", "Lacey", "Cody"]
 
-# for x in players:
-#    print(x)
+# for player in players:
+#    print(player)
+# print('')
 
-# for x in "Wisconsin":
+# for x in 'Wisconsin':
 #    print(x)
+# print('')
 
-# for x in players:
-#    if x == 'Lacey':
+# for x in 'Wisconsin':
+#    if x == 'c':
 #       break
 #    print(x)
+# print('')
+
+
+# # --- range ---
+# for x in range(6):
+#    print(x + 1) 
+# print('')
+
+# for x in range(2, 7):
+#    print(x)
+# print('')
+
+# for x in range(5, 101, 5):
+#    print(x)
+# else:
+#    print('Hello world')
+# print('')
+
+
+for num in range(1, 11):
+   print(num)
+print('')
+
+for x in range(1,6):
+   print(x * x)
+print('')
+
+fruits = list(['Apples', 'Banana', 'Mango', 'Pineapple', 'Tomato'])
+
+for fruit in fruits:
+   print(fruit)
+print('')
+
+for x in 'String':
+   print(x)
+print('')
+
+numbers = [1,2,3,4,5,6,7,8,9]
+for x in numbers:
+   if x % 2 == 0:
+      print(x)
+print('')
+
+greetingNames = ['Mom', 'Dad', 'STacey', 'Cody', 'Tammy', 'GG']
+
+for x in greetingNames:
+   print(f'Hello {x}, welcome to python!')
+print('')
+
+numbers = [10, 5, 20, 15, 25, 30]
+
+max_number = numbers[0]  # Assume the first number is the maximum
+
+for number in numbers:
+    if number > max_number:
+        max_number = number
+
+print("The maximum number is:", max_number)
+
+
 
