@@ -159,45 +159,59 @@ while value <= 10:
 # print('')
 
 
-for num in range(1, 11):
-   print(num)
-print('')
+# for num in range(1, 11):
+#    print(num)
+# print('')
 
-for x in range(1,6):
-   print(x * x)
-print('')
+# for x in range(1,6):
+#    print(x * x)
+# print('')
 
-fruits = list(['Apples', 'Banana', 'Mango', 'Pineapple', 'Tomato'])
+# fruits = list(['Apples', 'Banana', 'Mango', 'Pineapple', 'Tomato'])
 
-for fruit in fruits:
-   print(fruit)
-print('')
+# for fruit in fruits:
+#    print(fruit)
+# print('')
 
-for x in 'String':
-   print(x)
-print('')
+# for x in 'String':
+#    print(x)
+# print('')
 
-numbers = [1,2,3,4,5,6,7,8,9]
-for x in numbers:
-   if x % 2 == 0:
-      print(x)
-print('')
+# numbers = [1,2,3,4,5,6,7,8,9]
+# for x in numbers:
+#    if x % 2 == 0:
+#       print(x)
+# print('')
 
-greetingNames = ['Mom', 'Dad', 'STacey', 'Cody', 'Tammy', 'GG']
+# greetingNames = ['Mom', 'Dad', 'STacey', 'Cody', 'Tammy', 'GG']
 
-for x in greetingNames:
-   print(f'Hello {x}, welcome to python!')
-print('')
+# for x in greetingNames:
+#    print(f'Hello {x}, welcome to python!')
+# print('')
 
-numbers = [10, 5, 20, 15, 25, 30]
+# numbers = [10, 5, 20, 15, 25, 30]
 
-max_number = numbers[0]  # Assume the first number is the maximum
+# max_number = numbers[0]  # Assume the first number is the maximum
 
-for number in numbers:
-    if number > max_number:
-        max_number = number
+# for number in numbers:
+#     if number > max_number:
+#         max_number = number
 
-print("The maximum number is:", max_number)
+# print("The maximum number is:", max_number)
+
+# -- NESTED LOOPS ---
+   
+names = ['Bop', 'GG', 'Scotty']
+actions = ['Hammered', 'Busy', 'falling']
+
+# for name in names:
+#    for action in actions:
+#       print(f"{name} is {action}")
+      
+# for action in actions:
+#    for name in names:
+#       print(f"{name} is {action}")
+
 
 
 
