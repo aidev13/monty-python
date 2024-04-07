@@ -122,7 +122,7 @@ print(f)
 print(type(f))
 print(isinstance(f, float))
 
-# complex type
+# === COMPLEX TYPES ====
 print('')
 comp_value = 5+3j
 print(type(comp_value))
