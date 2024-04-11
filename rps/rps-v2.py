@@ -50,3 +50,5 @@ while playAgain:
       print('Please select yes or no...')
       print('')
       playAgain = input("\nPlay again?\nY for yes or \nN for no:\n")
+
+sys.exit('BYE! Play again soon!')
